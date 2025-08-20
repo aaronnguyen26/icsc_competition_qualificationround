@@ -3,7 +3,7 @@ def cake_calculator(flour: int, sugar: int) -> list[int]:
     Calculates how many cakes can be made and the remaining flour and sugar.
 
     This function takes the available amounts of flour and sugar, and
-    based on a specific cake recipe, determines the maximum number of cakes
+    based on a specific cake recipe (100 flour per cake, 50 sugar per cake), determines the maximum number of cakes
     that can be baked. It also calculates the quantities of flour and sugar
     that will be left over after baking.
 
@@ -16,11 +16,11 @@ def cake_calculator(flour: int, sugar: int) -> list[int]:
         sugar (int): The total amount of sugar available (must be larger than 0).
 
     Returns:
-        list[int]: A list containing three integers:
+        list[int]: A list containing three integers: 
                    [0] - The total number of cakes that can be made.
                    [1] - The amount of flour remaining after making all cakes.
                    [2] - The amount of sugar remaining after making all cakes.
-    """
+    """ 
 
      # Define the recipe's ingredient requirements.
     flour_needed_per_cake = 100
